@@ -1,0 +1,70 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.dot1,.dot2,.dot3{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  display: inline-block;
+}
+.dot1{
+  border: 10px solid white;
+  border-top-color:red;
+  border-right-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  left: 52.5%;
+  top: 32%;
+  animation-name: forDot1;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+.dot2{
+  border: 10px solid white;
+  border-left-color: blue;
+  border-top-color: skyblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  left: 30.5%;
+  animation-name: forDot2;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  animation-timing-function: linear;
+}
+.dot3{
+  border: 10px solid white;
+  border-bottom-color: green;
+  border-left-color: lightgreen;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  left: 74.5%;
+  animation-name: forDot3;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes forDot1 {
+  0% {transform: translate3d(-50%, -50%, 0) rotate(360deg);}
+  100% {transform: translate3d(-50%, -50%, 0) rotate(0deg);}
+}
+@keyframes forDot2 {
+  0% {transform: translate3d(-50%, -50%, 0) rotate(360deg);}
+  100% {transform: translate3d(-50%, -50%, 0) rotate(0deg);}
+}
+@keyframes forDot3 {
+  0% {transform: translate3d(-50%, -50%, 0) rotate(360deg);}
+  100% {transform: translate3d(-50%, -50%, 0) rotate(0deg);}
+}
